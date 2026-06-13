@@ -69,17 +69,32 @@ button[typr='reset'] {
 }
 
 @media (max-width: 768px) {
-  form {
-    width: 90%;
-    padding: 20px;
+  header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
-  img {
-    height: 200px;
+
+  h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  ul li a {
+    font-size: 14px;
   }
 }
 header {
   width: 100%;
-  height: 75px;
+  height: 150px;
   background: #6f4e37;
   display: flex;
   justify-content: space-between;
