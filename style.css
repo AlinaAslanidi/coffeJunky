@@ -47,6 +47,12 @@ ul li a {
 ul li a:hover {
   color: #ffd700;
 }
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 15px;
+  text-align: justify;
 
 section {
   background: bisque;
