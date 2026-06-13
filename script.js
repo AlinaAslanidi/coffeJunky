@@ -10,14 +10,19 @@ function showElements() {
   });
 }
 
-window.addEventListener('scroll', showElements);
-showElements();
-const topBtn = document.getElementById('topBtn');
+let btn = document.getElementById("topBtn");
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    topBtn.classList.add('showBtn');
+    btn.classList.add("showBtn");
   } else {
-    topBtn.classList.remove('showBtn');
+    btn.classList.remove("showBtn");
   }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
